@@ -1,0 +1,24 @@
+{
+  "name": "leader-emailtoname-parser",
+  "version": "1.0.0",
+  "repository": "git://github.com/tedjt/leader-emailtoname-parser.git",
+  "license": "MIT",
+  "description": "A plugin for leader to extract names from email addresses",
+  "keywords": [
+    "leader",
+    "Fullcontact",
+    "name",
+    "email",
+    "middleware"
+  ],
+  "dependencies": {
+    "debug": "~0.7.4",
+    "extend": "~1.2.1",
+    "obj-case": "git://github.com/tedjt/obj-case",
+    "fullcontact": "0.0.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.15.1",
+    "should": "~3.1.2"
+  }
+}
