@@ -30,7 +30,7 @@ module.exports.test = {
 
 function middleware (options) {
   var fullcontact = new Fullcontact(options.fullcontactApiKey);
-  return function fullcontactNameApi (person, context, next) {
+  return function emailtonameParser (person, context, next) {
     // search for both email and username. go with higher probablity
     var username = getUsername(person, context);
     if (!username) return next();

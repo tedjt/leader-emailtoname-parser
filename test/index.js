@@ -3,7 +3,7 @@ var assert = require('assert');
 var should = require('should');
 var plugin = require('..');
 
-describe('leader-fullcontact-name', function () {
+describe('leader-emailtoname-parser', function () {
   // ted.j.tomlinson
   // gwintrob
   // t.tomlinson
@@ -79,6 +79,8 @@ describe('leader-fullcontact-name', function () {
   it('t_tomlinson', runTest('t_tomlinson@gmail.com', 'T. Tomlinson', 'T.', 'Tomlinson'));
   it('johng', runTest('johng@gmail.com', 'John G.', 'John', 'G.'));
   it('hwwatkins', runTest('hwwatkins@gmail.com', 'Hw Watkins', 'Hw', 'Watkins'));
+  it('lukexie', runTest('lukexie@gmail.com', 'Luke Xie', 'Luke', 'Xie'));
+  it('lxie', runTest('lxie@gmail.com', 'L. Xie', 'L.', 'Xie'));
   // we can't handle the truth 
   //it('gwintrob', runTest('gwintrob@gmail.com', 'G. Wintrob', 'G.', 'Wintrob'));
 
